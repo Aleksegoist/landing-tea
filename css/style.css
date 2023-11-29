@@ -288,6 +288,122 @@ body {
   padding: 100px 0;
   background-color: #f7f2ea;
   background-image: url(../images/mailing-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.mailing-list__title {
+  text-align-last: left;
+  margin-bottom: 50px;
+}
+
+.mailing-list__inner {
+  display: flex;
+  gap: 60px 40px;
+}
+
+.mailing-list__text {
+  line-height: 1.5;
+  flex-basis: 580px;
+}
+
+.mailing-list__form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 580px;
+}
+
+.mailing-list__email {
+  border: none;
+  border-bottom: 1px solid #b8b58b;
+  background-color: transparent;
+  padding: 3px 15px;
+  width: 408px;
+  margin-right: 25px;
+  font-family: 'Open Sans', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #151618;
+}
+
+.mailing-list__email::placeholder {
+  font-family: 'Open Sans', serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #b8b58b;
+}
+
+.mailing-list__btn {
+  font-family: 'Open Sans', serif;
+  background-color: #fff;
+  border: 1px solid #151618;
+  padding: 12px 41px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.checkbox__text {
+  font-size: 13px;
+  padding-left: 20px;
+}
+
+.mailing-list__label {
+  margin-top: 16px;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+  padding-left: 20px;
+}
+
+.checkbox-style {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 1px solid #151618;
+  margin-top: 5px;
+}
+
+.checkbox:checked + .checkbox-style::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  background-color: #151618;
+  top: 2px;
+  left: 2px;
+}
+
+.priorities {
+  padding: 150px 0;
+}
+
+.priorities__list {
+  text-align: center;
+  display: flex;
+  gap: 30px 49px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.priorities__title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.priorities__text {
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 /* ---------------- media ----------------- */
